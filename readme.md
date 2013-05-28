@@ -22,7 +22,7 @@ In the HTML code your can call the helper : isAllow($ctrl,$ssctrl="*") to know i
 For example : <br/>
 
 <?php if(isAllow('admin','activate')){ ?>
-	<a  href="<?php echo site_url('admin/activate'); ?>" >Activate</a>
+	&lt;a  href=&quot;&lt;?php echo site_url(&#39;admin/activate&#39;); ?&gt;&quot; &gt;Activate&lt;/a&gt;
 <?php } ?>
 
 License 
