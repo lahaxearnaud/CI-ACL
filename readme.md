@@ -6,7 +6,7 @@ Simple ACL for the codeigniter Framework. Need <a href="https://github.com/bened
 
 Requires
 ========
-<a href="https://github.com/benedmunds/CodeIgniter-Ion-Auth" >Ion auth</a>
+<a href="https://github.com/benedmunds/CodeIgniter-Ion-Auth" >Ion auth</a><br/>
 For the display exemple : Bootstrap + jQuery. 
 
 
@@ -21,9 +21,17 @@ In the HTML code your can call the helper : isAllow($ctrl,$ssctrl="*") to know i
 
 For example : <br/>
 
-<?php if(isAllow('admin','activate')){ ?>
-	&lt;a  href=&quot;&lt;?php echo site_url(&#39;admin/activate&#39;); ?&gt;&quot; &gt;Activate&lt;/a&gt;
-<?php } ?>
+<?php if(isAllow('admin','activate')){ ?><br/>
+	&lt;a  href=&quot;&lt;?php echo site_url(&#39;admin/activate&#39;); ?&gt;&quot; &gt;Activate&lt;/a&gt;<br/>
+<?php } ?><br/>
+
+If you put an ACL on contoller/* all function of admin will be restricted. But you can also do it : <br/>
+contoller/* only for a group <br/>
+but aldo admin/public for everybody<br/>
+
+
+
+
 
 License 
 ========
