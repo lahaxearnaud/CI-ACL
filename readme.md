@@ -27,7 +27,7 @@ For example : <br/>
 
 If you put an ACL on contoller/* all function of admin will be restricted. But you can also do it : <br/>
 contoller/* only for a group <br/>
-but aldo admin/public for everybody<br/>
+but also contoller/public for everybody<br/>
 
 
 
