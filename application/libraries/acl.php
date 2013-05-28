@@ -58,7 +58,7 @@ class acl{
 	}
 
 	public function addPermPublic($id_action){
-				return $this->ci->group_action_model->insert(array('id_action'=>$id_action,'id_group'=>'-1'));
+		return $this->ci->group_action_model->insert(array('id_action'=>$id_action,'id_group'=>'-1'));
 
 	}
 

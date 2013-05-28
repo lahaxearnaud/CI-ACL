@@ -151,12 +151,13 @@
 						}
 						$.ajax({
 							type: "POST",
-							url: "<?php echo site_url('droit/setPublic');?>",
+							url: url,
 							data: { 
 								id_action :$(this).attr('data-action'),
+								id_group:-1,
 							}
 						});
-					});
+					}); 
 
 				});
 

@@ -15,7 +15,7 @@ Installation
 
 Add all files in your codeigniter installation, execute the SQL script in your MySQL installation and set in your application/conf/config.php: <br/>$config['enable_hooks'] = TRUE;<br/>
 
-Now you can access to the page http://YOUR_URL/droit to set your ACLs.
+Now you can access to the page http://YOUR_URL/index.php/droit to set your ACLs.
 
 In the HTML code your can call the helper : isAllow($ctrl,$ssctrl="*") to know if you may display a link or not.<br/>
 
