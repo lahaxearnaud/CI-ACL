@@ -10,9 +10,10 @@ class droit extends CI_Controller {
 		$data['groups'] = $this->ion_auth->groups()->result();
 		$data['actions'] = $this->action_model->getAll();
 		foreach ($data['actions'] as $action) {
+			$action->groups = array();
 			$group_action = $this->group_action_model->openWhere(array('id_action'=>$action->id));
 			foreach ($group_action as $group) {				
-				$data['group_action'][$action->id][$group->id_group] = true; 
+				$action->groups[$group->id_group] = true; 
 			}
 		}
 		$this->load->view("acl.tpl.php", $data);

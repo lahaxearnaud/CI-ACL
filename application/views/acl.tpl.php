@@ -74,7 +74,7 @@
 								<td align="center">
 									<?php 
 									$check = false;
-									if( isset($group_action[$action->id][$group->id]) ){
+									if( isset($action->groups[$group->id]) ){
 										$check = true;
 									}
 									$data = array(
@@ -92,7 +92,7 @@
 								<? } ?>
 								<td>
 									<?php
-									$public = isset($group_action[$action->id][-1]);
+									$public = isset($action->groups[-1]);
 									$data = array(
 										"value" => '-1',
 										"name" => 'droit',
