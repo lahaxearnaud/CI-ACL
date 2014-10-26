@@ -13,7 +13,11 @@ For the display exemple : Bootstrap + jQuery.
 Installation
 ========
 
-Add all files in your codeigniter installation, execute the SQL script in your MySQL installation and set in your application/conf/config.php: <br/>$config['enable_hooks'] = TRUE;<br/>
+Add all files in your codeigniter installation, execute the SQL script in your MySQL installation and set in your application/conf/config.php: <br/>
+
+```
+$config['enable_hooks'] = TRUE;
+```
 
 Now you can access to the page http://YOUR_URL/index.php/droit to set your ACLs.
 
@@ -21,9 +25,11 @@ In the HTML code your can call the helper : isAllow($ctrl,$ssctrl="*") to know i
 
 For example : <br/>
 
-<?php if(isAllow('admin','activate')){ ?><br/>
-	&lt;a  href=&quot;&lt;?php echo site_url(&#39;admin/activate&#39;); ?&gt;&quot; &gt;Activate&lt;/a&gt;<br/>
-<?php } ?><br/>
+```
+<?php if(isAllow('admin','activate')){ ?>
+	<a href="<?php echo site_url('admin/activate'); ?>;" >Activate</a><br/>
+<?php } ?>
+```
 
 If you put an ACL on contoller/* all function of admin will be restricted. But you can also do it : <br/>
 contoller/* only for a group <br/>
